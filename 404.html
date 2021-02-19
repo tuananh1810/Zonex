@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zonex</title>
+  <base href="/Zonex/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/Owl/owl.carousel.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/Owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/Owl/owl.theme.default.min.css">
+  <style type="text/css">@font-face{font-family:'Jost';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/jost/v6/92zPtBhPNqw79Ij1E865zBUv7myjJTVFNI4un_HKOEp-Cw.woff) format('woff');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Jost';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/jost/v6/92zPtBhPNqw79Ij1E865zBUv7myjJTVPNI4un_HKOEp-Cw.woff) format('woff');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Jost';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/jost/v6/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNI4un_HKOEo.woff) format('woff');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="../assets//CSS/style.css">
+<link rel="stylesheet" href="styles.5c90d445b4742089dbaa.css"></head>
+<body>
+	<div class="container-fluid">
+		  <app-root></app-root>  
+	</div>
+
+<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel({
+				active: true,
+				loop: true,	
+			    navigation : true, // Show next and prev buttons
+			    slideSpeed : 300,
+			    paginationSpeed : 400,
+			    items : 1, 
+			    itemsDesktop : false,
+			    itemsDesktopSmall : false,
+			    itemsTablet: false,
+			    itemsMobile : false
+			});
+		});	
+</script>
+
+<script>
+
+	function filterClose(){
+		var x = document.getElementsByClassName("sidebar-shop");
+		var y = document.getElementsByClassName("overlay");
+		for (var i = 0; i < x.length; i++){
+			x[i].classList.remove("sidebar-active");
+		}
+		for (var i = 0; i < y.length; i++){
+			y[i].classList.remove("overlay-active");
+		}
+	}
+
+	function filterOpen(){
+		var x = document.getElementsByClassName("sidebar-shop");
+		var y = document.getElementsByClassName("overlay");
+		for (var i = 0; i < x.length; i++){
+			x[i].classList.add("sidebar-active");
+		}
+		for (var i = 0; i < y.length; i++){
+			y[i].classList.add("overlay-active");
+		}
+		// for (var i = 0; i < y.length; i++){
+		// 	y[i].classList.add("overlay-active");
+		// }
+		// x.classList.add("sidebar-active");
+		// y.classList.add("overlay-active");
+	}
+
+	function myFunction2(){
+		var t = document.getElementById("color");
+		t.style.fontWeight = "bold";
+		t.style.fontSize = "1rem";
+		t.innerHTML = "Red";
+		t.style.color = "red";
+	}
+
+	function myFunction3(){
+		var t = document.getElementById("color");
+		t.style.fontWeight = "bold";
+		t.style.fontSize = "1rem";
+		t.innerHTML = "Orange";
+		t.style.color = "orange";
+	}
+
+	function myFunction4(){
+		var t = document.getElementById("color");
+		t.style.fontWeight = "bold";
+		t.style.fontSize = "1rem";
+		t.innerHTML = "Green";
+		t.style.color = "darkgreen";
+	}
+
+	function myFunction5(){
+		var t = document.getElementById("color");
+		t.style.fontWeight = "bold";
+		t.style.fontSize = "1rem";
+		t.innerHTML = "Black";
+		t.style.color = "black";
+	}
+
+	function myFunction6(){
+		var t = document.getElementById("color");
+		t.style.fontWeight = "bold";
+		t.style.fontSize = "1rem";
+		t.innerHTML = "Brown";
+		t.style.color = "brown";
+	}
+
+	function myFunction7(){
+		var t = document.getElementById("color");
+		t.style.fontWeight = "bold";
+		t.style.fontSize = "1rem";
+		t.innerHTML = "Purple";
+		t.style.color = "purple";
+	}
+
+	function change() {
+		var x = document.getElementById("text");
+		var y = document.getElementById("text1");
+		var z = document.getElementById("des");
+		var t = document.getElementById("rev");
+		x.style.display = "block";
+		y.style.display = "none";
+		z.classList.add("btn-active");
+		t.classList.remove("btn-active");
+	}
+
+	function change1() {
+		var x = document.getElementById("text1");
+		var y = document.getElementById("text");
+		var z = document.getElementById("rev");
+		var t = document.getElementById("des");
+		x.style.display = "block";
+		y.style.display = "none";
+		z.classList.add("btn-active");
+		t.classList.remove("btn-active");
+	}
+
+	var i = 0;
+
+	function increase(){
+		var x = document.getElementById("number");
+		x.innerHTML = ++i;
+	}
+
+	function decrease(){
+		var x = document.getElementById("number");
+		var y = --i;
+		if(y < 0) {
+			x.innerHTML = 0;
+			i = 0;
+		}
+		else x.innerHTML = y;
+	}
+
+</script>
+
+<script src="runtime.0e49e2b53282f40c8925.js" defer=""></script><script src="polyfills.8c151b8375e767ff858f.js" defer=""></script><script src="main.4a5c2033831fbb65c3f4.js" defer=""></script></body>
+</html>
